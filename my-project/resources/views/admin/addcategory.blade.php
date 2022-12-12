@@ -3,29 +3,15 @@
     Add Category - Single Ecom
 @endsection
 
-<!doctype html>
-<html>
-
-<head>
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-
-<body>
-    <h1>This is example from LaravelTuts.com</h1>
-
+<span>Add Category</span>
+@section('content')
     <div class="container">
-        <h4>Add New category</h4>
-        <form action="" method="POST">
+        <form>
             <div class="form-group">
-                <label for="name">Category Name</label>
-                <input type="text" class="form-control" id="category_name" name="category_name"
-                    aria-describedby="nameHelp" placeholder="Electronics">
-                <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
@@ -35,14 +21,7 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            <button type="submit" class="btn btn-primary">Add Category</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-</body>
-
-</html>
-<span>Add Category</span>
-
-
-@section('content')
 @endsection

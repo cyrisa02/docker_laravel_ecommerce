@@ -1,6 +1,19 @@
 Tuto 
 https://www.youtube.com/watch?v=AvtBa1-hYFc&list=PLbU5fb28FeRxgpcD0T7JBInDpO6qsudJ4
 
+
+installation de bootstrap
+https://www.youtube.com/watch?v=N3SctI4D1r4
+<!-- Scripts -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+mettre ce script dans le layout comme template.blade 
+
+
+Template de dashboard
+https://getbootstrap.com/docs/5.2/examples/dashboard/
+
+
+
 docker exec -it laravel_ecommerce_myapp_1 bash
 
 sudo chown -R $USER ./
