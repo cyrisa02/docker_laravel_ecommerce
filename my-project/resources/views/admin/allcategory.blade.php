@@ -1,7 +1,7 @@
 @extends('admin.layouts.template')
 @section('page_title')
-    Dasboard - Single Ecom
+    Category - Single Ecom
 @endsection
-<span>Hello from dashboard</span>
+<span>Hello from all Category</span>
 @section('content')
 @endsection

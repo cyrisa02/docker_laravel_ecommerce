@@ -1,7 +1,7 @@
 @extends('admin.layouts.template')
 @section('page_title')
-    Dasboard - Single Ecom
+    Pending Orders - Single Ecom
 @endsection
-<span>Hello from dashboard</span>
+<span>Pending Orders</span>
 @section('content')
 @endsection

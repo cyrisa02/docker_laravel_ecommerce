@@ -33,9 +33,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::middleware(['auth', 'role:admin'])->group(function(){
+Route::middleware(['auth', 'role:user'])->group(function(){
     Route::controller(DashboardController::class)->group(function(){
-        Route::get('/admin/dashboard','index');    
+        Route::get('/admin/dashboard','index')->name('admindashboard');    
 });
 
 Route::controller(CategoryController::class)->group(function(){
@@ -49,13 +49,13 @@ Route::controller(SubCategoryController::class)->group(function(){
 });
 
 Route::controller(ProductController::class)->group(function(){
-        Route::get('/admin/all-product','index')->name('allproduct'); 
+        Route::get('/admin/all-products','index')->name('allproducts'); 
         Route::get('/admin/add-product','addProduct')->name('addproduct');       
 });
 
 Route::controller(OrderController::class)->group(function(){
         Route::get('/admin/pending-order','index')->name('pendingorder'); 
-        Route::get('/admin/add-product','addProduct')->name('addproduct');       
+             
 });
 
 });
@@ -63,3 +63,6 @@ Route::controller(OrderController::class)->group(function(){
 
 
 require __DIR__.'/auth.php';
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

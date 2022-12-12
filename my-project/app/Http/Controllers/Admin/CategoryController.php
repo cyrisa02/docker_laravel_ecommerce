@@ -12,7 +12,7 @@ class CategoryController extends Controller
     }
 
     public function addCategory(){
-        return view('admin.allcategory');
+        return view('admin.addcategory');
     }
 
 }
