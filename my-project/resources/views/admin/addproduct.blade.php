@@ -5,22 +5,62 @@
 <span>Add Product</span>
 @section('content')
     <div class="container">
-        <form>
+        <h4>Page/ Add Product</h4>
+        <form action="" method="POST">
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <label for="exampleInputEmail1">Product Name</label>
+                <input type="text" class="form-control" id="subcategory_name" name="subcategory_name"
+                    aria-describedby="categoryHelp" placeholder="Electronics">
+                <small id="categoryHelp" class="form-text text-muted">Input Information</small>
             </div>
+
+
             <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <label for="exampleInputEmail1">Product Short Description</label>
+                <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
             </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Product Long Description</label>
+                <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Product Price</label>
+                <input type="number" class="form-control" id="subcategory_name" name="subcategory_name"
+                    aria-describedby="categoryHelp" placeholder="12">
+                <small id="categoryHelp" class="form-text text-muted">Input Information</small>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Product Quantity</label>
+                <input type="number" class="form-control" id="subcategory_name" name="subcategory_name"
+                    aria-describedby="categoryHelp" placeholder="1000">
+                <small id="categoryHelp" class="form-text text-muted">Input Information</small>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="mb-2">Select Sub Category</label>
+                <div class="col-sm-10">
+                    <select class="form-select" name="category" id="category" aria-label="Default select">
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Upload Product Image</label>
+                <input type="file" class="form-control" id="formFile" />
+            </div>
+
+            <div class="row justify-content-end">
+                <div class="col-sm-10 mt-4">
+                    <button type="submit" class="btn btn-primary">Add Product</button>
+                </div>
+            </div>
         </form>
+
     </div>
 @endsection

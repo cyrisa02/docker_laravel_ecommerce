@@ -4,4 +4,31 @@
 @endsection
 <span>All products</span>
 @section('content')
+    <div class="container">
+        <h4>Page/ All Products</h4>
+        <h5>Available All Product Information</h5>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Img</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Fan</td>
+                    <td></td>
+                    <td>100</td>
+                    <td>
+                        <a href="" class="btn btn-primary">Edit</a>
+                        <a href="" class="btn btn-warning">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 @endsection
